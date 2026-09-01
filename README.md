@@ -5,4 +5,4 @@ Configurable MATLAB toolkit implementing spatial filtering, separable transforms
 
 The toolkit applies multiple spatial- and frequency-domain filters to the same noisy grayscale image.
 
-![Comparison of image-processing filters](docs/images/filter-comparison.png)
+![Comparison of image-processing filters](docs/images/imageEX.png)
