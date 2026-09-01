@@ -1,0 +1,83 @@
+{
+  "config": {
+    "inputPath": "C:\\Users\\owenr\\OneDrive\\Documents\\MATLAB\\digital-image-processing-toolkit\\examples\\generated\\noisy_input.png",
+    "referencePath": "C:\\Users\\owenr\\OneDrive\\Documents\\MATLAB\\digital-image-processing-toolkit\\examples\\generated\\clean_reference.png",
+    "outputDir": "C:\\Users\\owenr\\OneDrive\\Documents\\MATLAB\\digital-image-processing-toolkit\\results\\demo",
+    "saveOutputs": true,
+    "showFigures": true,
+    "median": {
+      "enabled": true,
+      "windowSize": 5
+    },
+    "knn": {
+      "enabled": true,
+      "windowSize": 3,
+      "k": 4,
+      "includeCenter": true
+    },
+    "disk": {
+      "enabled": true,
+      "radius": 3,
+      "kernelSize": 11
+    },
+    "gaussian": {
+      "enabled": true,
+      "sigma": 2,
+      "radius": []
+    },
+    "frequency": {
+      "enabled": true,
+      "method": "fft",
+      "cutoffFraction": 0.08,
+      "transitionFraction": 0.04,
+      "lowGain": 0.5,
+      "highGain": 1,
+      "matrixMaxDimension": 256
+    },
+    "transforms": {
+      "enabled": true,
+      "imageSize": [
+        8,
+        10
+      ],
+      "randomSeed": 457
+    }
+  },
+  "metrics": {
+    "median": {
+      "comparedTo": "reference",
+      "mse": 0.00017815225814591282,
+      "psnrDb": 37.492086684345267,
+      "globalSsim": 0.996710580152888
+    },
+    "knn": {
+      "comparedTo": "reference",
+      "mse": 0.0023617230466309548,
+      "psnrDb": 26.267710323669039,
+      "globalSsim": 0.95804193427946593
+    },
+    "disk": {
+      "comparedTo": "reference",
+      "mse": 0.00077770335746698291,
+      "psnrDb": 31.091860261236512,
+      "globalSsim": 0.98602402176482584
+    },
+    "gaussian": {
+      "comparedTo": "reference",
+      "mse": 0.00061450932332978814,
+      "psnrDb": 32.114715236156663,
+      "globalSsim": 0.98905389212618378
+    },
+    "frequency": {
+      "comparedTo": "reference",
+      "mse": 0.036399263168425962,
+      "psnrDb": 14.389074077005478,
+      "globalSsim": 0.49149879001525831
+    }
+  },
+  "transformErrors": {
+    "separableMaxAbs": 3.5527136788005009E-15,
+    "circularVsFFTMaxAbs": 1.4210854715202004E-14,
+    "separableCircularMaxAbs": 3.5527136788005009E-15
+  }
+}
